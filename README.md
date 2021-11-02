@@ -1,6 +1,6 @@
 # Docker for Networking
 
-A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. See more info on [what is a container](https://www.docker.com/resources/what-container)
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. See more information on [what is a container](https://www.docker.com/resources/what-container)?
 
 ## Docker Installation on Ubuntu
 
