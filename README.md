@@ -59,9 +59,11 @@ See other ways to [Install Docker Engine](https://docs.docker.com/engine/install
 
 The hello_world container will still exist on your system, as can be viewed by running this command:
 
-```docker ps -a```
+```console
+docker ps -a
+```
 
-To check more information check below commands:
+To check more information about docker use below commands:
 
 ```console
 docker --version
