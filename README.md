@@ -4,7 +4,7 @@ A container is a standard unit of software that packages up code and all its dep
 
 ## Docker Installation on Ubuntu
 
-You can install Docker Engine in different ways, depending on your needs. See [Install Docker Engine](https://docs.docker.com/engine/install/).
+You can install Docker Engine in different ways, depending on your needs.
 
 ### Install using the repository
 
@@ -52,6 +52,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```console
 sudo docker run hello-world
 ```
+
+See other ways to [Install Docker Engine](https://docs.docker.com/engine/install/).
 
 ### Docker Commands
 
