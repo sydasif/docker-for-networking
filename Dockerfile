@@ -1,6 +1,6 @@
 # docker base image for Netmiko, NAPALM, Pyntc, and Ansible
 
-FROM ubuntu:bionic
+FROM ubuntu:latest
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y --no-install-recommends \
     install telnet curl openssh-client nano vim-tiny iputils-ping build-essential \
