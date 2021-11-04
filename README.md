@@ -70,3 +70,65 @@ docker --version
 docker version
 docker info
 ```
+
+To pull image from docker hub:
+
+```con
+ubuntu@ubuntu:~$ docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Image is up to date for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+ubuntu@ubuntu:~$ docker pull centos
+Using default tag: latest
+latest: Pulling from library/centos
+Digest: sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
+Status: Image is up to date for centos:latest
+docker.io/library/centos:latest
+```
+
+To list install docker images:
+
+```con
+ubuntu@ubuntu:~$ docker image ls
+REPOSITORY                    TAG       IMAGE ID       CREATED        SIZE
+ubuntu                        latest    ba6acccedd29   2 weeks ago    72.8MB
+centos                        latest    5d0da3dc9764   6 weeks ago    231MB
+
+ubuntu@ubuntu:~$ docker images
+REPOSITORY                    TAG       IMAGE ID       CREATED        SIZE
+ubuntu                        latest    ba6acccedd29   2 weeks ago    72.8MB
+centos                        latest    5d0da3dc9764   6 weeks ago    231MB
+
+```
+
+To start and tty a container and check os:
+
+```con
+ubuntu@ubuntu:~$ docker start 6b4033592308 
+6b4033592308
+
+ubunt@ubuntu:~$ docker ps 
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+6b4033592308   ubuntu    "bash"    7 minutes ago   Up 3 seconds             wonderful_goldstine
+
+ubuntu@ubuntu:~$ docker attach 6b4033592308
+
+root@6b4033592308:/# 
+root@6b4033592308:/# cat /etc/os-release 
+NAME="Ubuntu"
+VERSION="20.04.3 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.3 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+root@6b4033592308:/#
+```
