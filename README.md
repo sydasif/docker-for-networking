@@ -12,11 +12,11 @@ When most people talk about Docker, they’re referring to the technology that r
 
 1. _The runtime_
 2. _The daemon (a.k.a. engine)_
-3. _The orchestrator_
+3. _The orchestration_
 
 ## Windows containers vs Linux containers
 
-It’s vital to understand that a running container shares the kernel of the host machine it is running on. Iis means that a containerized Windows app will not run on a Linux-based Doer host, and vice-versa. Windows containers require a Windows host, and Linux containers require a Linux host.
+It’s vital to understand that a running container shares the kernel of the host machine it is running on. Its means that a containerized Windows app will not run on a Linux-based Doer host, and vice-versa. Windows containers require a Windows host, and Linux containers require a Linux host.
 
 It is possible to run Linux containers on Windows machines. For example, Docker Desktop running on Windows has two modes — “Windows containers” and “Linux containers”. Depending on your version of Docker Desktop, Linux container run either inside a lightweight Hyper-V VM or using the Windows Subsystem for Linux (WSL). The WSL option is newer and the strategic option for the future as it doesn’t require a Hyper-V VM and oﬀers better performance and compatibility.
 
@@ -24,7 +24,7 @@ It is possible to run Linux containers on Windows machines. For example, Docker 
 
 You can install [Docker Engine](https://docs.docker.com/engine/install/) in different ways, depending on your needs.
 
-## Installing Docker on Linux
+### Installing Docker on Linux
 
 In this lab we’ll look at one of the ways to install on Ubuntu Linux 20.04 LTS.
 
@@ -60,7 +60,7 @@ $ echo \
 
 ### Install Docker Engine
 
-* Update the apt package index, and install the latest version of Docker Engine and containerd, or go to the next step to install a specific version:
+* Update the apt package index, and install the latest version of Docker Engine and container, or go to the next step to install a specific version:
 
 ```console
 sudo apt-get update
@@ -75,7 +75,7 @@ sudo docker run hello-world
 
 See other ways to [Install Docker Engine](https://docs.docker.com/engine/install/).
 
-### Docker Commands
+## Docker Commands
 
 Docker is now installed and you can test running some commands to check more information about docker.
 
